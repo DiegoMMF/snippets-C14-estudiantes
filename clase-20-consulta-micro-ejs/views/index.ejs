@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<body>
+    <%- include("partials/header") %>
+    <br>
+    Hola, desde un .EJS
+        
+        <br>
+        <% var fruits=["Apple", "Pear" , "Orange" , "Lemon" ] , random=" " .repeat(198).split("").map(x=> Math.random())
+            ;
+            %>
+<br>
+            These fruits are amazing:
+            <% for(var i=0; i < fruits.length; ++i) {%>
+                - <%=fruits[i]%>s<% } %>
+                <br>
+                        <%- include("partials/footer") %>
+</body>
+
+</html>
