@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body { margin: 10vh; }
+        input { display: block; margin-bottom: 1vh; }
+    </style>
+</head>
+
+<body>
+    <!-- Con enctye debemos avisar al servidor que los datos serán binarios
+         ya que el valor por defecto es 'application/x-www-form-urlencoded' -->
+    <form action="/register" method="POST" enctype="multipart/form-data">
+        <p>Seleccione un archivo...</p>
+        <input type="file" name="archivo">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
